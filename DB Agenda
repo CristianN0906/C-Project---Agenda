@@ -1,0 +1,22 @@
+CREATE DATABASE Agenda;
+
+USE Agenda;
+
+CREATE TABLE Persoane (
+Id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+Nume VARCHAR(50),
+Prenume VARCHAR(150),
+Telefon VARCHAR(50),
+Oras VARCHAR(150)
+);
+
+INSERT INTO Persoane VALUES
+('Pop', 'Simon', '0731 111 111','Bucuresti'),
+('Popescu','Cirdei', '0731 222 123','Constanta'),
+('Ciobanu','Ungureanu', '0731 333 345','Iasi'),
+('Ciobanu','Danila', '0731 444 456','Bucuresti'),
+('Rusu','Popa', '0731 555 678','Constanta'),
+('Nagy','Kovacs', '0731 666 890','Bucuresti'),
+('Popa','Dumitru', '0731 777 012','Constanta'),
+('Radu','Mocanu', '0731 888 002','Bucuresti'),
+('Ivanov','Gheorghe', '0731 999 120','Iasi');
